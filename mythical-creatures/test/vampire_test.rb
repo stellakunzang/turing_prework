@@ -39,4 +39,11 @@ class VampireTest < Minitest::Test
     refute vampire.thirsty?
 
   end
+
+  def test_change_pet
+    vampire = Vampire.new ("Carl")
+    vampire.change_pet("elephant")
+    assert_equal "elephant", vampire.pet
+  end
+
 end
