@@ -1,5 +1,4 @@
 class Vampire
-
   attr_accessor :name, :pet, :thirsty, :drink_count
 
   def initialize(name, pet = "bat", thirsty = true)
